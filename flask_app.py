@@ -24,10 +24,10 @@ def run_blast():
     hits = blast(query_sequence, database)
     return {"hits": hits}
 if __name__ == '__main__':
-    app.run(debug=True,port=9000)
+    app.run(debug=True,port=5000)
 import requests
 
-url = "http://localhost:9000/blast"
+url = "http://localhost:5000/blast"
 data = {
     "query_sequence": "ATCG",
     "database": "nt",
